@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+	label{
+		color: black
+	}
+
+	.box{
+      border: 1px solid gray;
+      border-radius: 5px;
+      max-width: 500px;
+      box-shadow: 3px 3px 3px black;
+      padding:20px 20px 20px 20px;
+
+     }
+
+input:hover{
+	background-color: red;
+	border-color: black;
+}
+input:focus{
+	background-color: white;
+	border-color: green;
+	color:green;
+}
+
+.formataInput{
+	width: 100%;
+	height: 30px;
+	background-color: blue;
+	border-radius: 10px;
+	margin-top: 5px;
+}
+
+.box-campos{
+	margin-bottom: 15px;
+}
+
+.button{
+	width: 100%;
+	color:black;
+    font-size: 20px;
+    text-shadow: 1px 1px gray;
+    border-radius: 5px;
+    padding: 10px 0px 10px 0px;
+    background-color: #2ecc71;
+    border-top: 5px solid #2ecc71;
+    border-left: 5px solid #2ecc71;
+    border-bottom: 5px solid #27ae60;
+    border-right: 5px solid #27ae60;
+}
+
+.button:hover{
+	background-color: #2ecc71;
+	border-bottom: 5px solid #2ecc71;
+	border-right: 5px solid #2ecc71;
+	border-top: 5px solid #27ae60;
+	border-left: 5px solid #27ae60;
+}
+
+
+
+</style>
+
+<title>Formulario de Cadastro</title>
+</head>
+<body>
+<h1>Cadastro de Usuário</h1>
+
+<div class="box">
+<form>
+	<div class="box-campos">
+	<label id="nome">Nome</label>
+    <input class="formataInput" id="nome" name="nome" type="text" placeholder="Digite um nome" required minlength="5">
+</div>
+
+<br>
+
+<div class="box-campos">
+<label for="email">E-mail</label>
+<input class="formataInput" id="email" type="email" required placeholder="nome@email.com">
+</div>
+
+<br>
+
+<div class="box-campos">
+<label for="senha">Senha</label>
+<input class="formataInput" id="senha" type="password" minlength="6" required="">
+</div>
+
+<br>
+
+<div class="box-campos">
+<label>Escolha suas frutas favoritas</label>
+<input id="laranja" type="checkbox" value="laranja"><label for="laranja">Laranja</label>
+<input id="maca" type="checkbox" value="maca"><label for="maca">Maçã</label>
+<input id="banana" type="checkbox" value="banana"><label for banana>Banana</label>
+</div>
+
+<br>
+
+<div class="box-campos">
+<label for="sexo">Sexo</label>
+
+<input type="sexo" id="f" type="radio" value="f"><label for="f">F</label>
+	<input type="radio" name="sexo" id="m" value="m"><label for="m">M</label>
+
+</div>
+
+<br>
+
+<div class="box-campos">
+<label for="cor">Escolha uma cor</label>
+<input class="formataInput" type="color" id="cor">
+</div>
+
+<br>
+
+<div class="box-campos">
+<label for="aniversario">Data de Aniversario</label>
+<input class="formataInput"  type="date" id="aniversario" required="">
+</div>
+
+<br>
+
+<div class="box-campos">
+<label for="idade">Idade</label>
+<input class="formataInput"  type="number" id="idade" min="10">
+</div>
+
+<br>
+
+<div class="box-campos">
+<label for="nota">Nota</label>
+<input class="formataInput" id="nota" type="range" min="0" max="10">
+</div>
+
+<br>
+
+<div class="box-campos">
+<label for="pagina">Pagina</label>
+<input class="formataInput" type="url" id="pagina" placeholder="https://suapagina.com">
+</div>
+
+<br>
+
+
+<input class="button"  type="submit" value="Cadastrar">
+
+</form>
+</div>
+
+
+
+
+
+
+</body>
+</html>
